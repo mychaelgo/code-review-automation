@@ -1,0 +1,11 @@
+apis:
+  - name: User Activity Service"
+    path: /activities*
+    methods:
+      GET:
+        authorization:
+          types:
+            - jwt
+            - 
+          proxy:
+          url: ${USER_ACTIVITY_SERVICE_BASE_URL}/api/v2

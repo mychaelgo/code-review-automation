@@ -1,0 +1,7 @@
+apis: list(include('api'))
+---
+api:
+  name: str()
+  path: str()
+  version: str()
+  methods: map()
