@@ -11,3 +11,8 @@ jobs:
         with:
           reporter: github-pr-review # Change reporter.
           yamllint_flags: 'config/'
+      - name: Yaml Schema Validator using Yamale
+        uses: PaulRitter/yaml-schema-validator@v1
+        with:
+          schema: endpoint_configuration_schema.yml
+          path_pattern: config/*.ya?ml$
